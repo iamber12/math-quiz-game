@@ -10,18 +10,18 @@ This application conducts a timed quiz using questions from a CSV file, displayi
 
 ## Installation
 
-\```bash
+```bash
 git clone [https://github.com/yourusername/quiz-app.git](https://github.com/iamber12/quiz-game)
 cd quiz-app
 go build
-\```
+```
 
 ## Usage
 Execute the quiz application:
 
-\```bash
+```bash
 ./quiz-app -f path/to/your/csvfile.csv -t timeout_in_seconds
-\```
+```
 
 ### Options
 
@@ -31,16 +31,15 @@ Execute the quiz application:
 ### CSV Format
 
 The CSV file should have no header and be formatted as:
-\```
+```
 question1,answer1
 question2,answer2
-...
-\```
+```
 
 ## Example
 
 To start a 30-second quiz:
 
-\```bash
+```bash
 ./quiz-app -f my_questions.csv -t 30
-\```
+```
