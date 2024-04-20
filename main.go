@@ -31,8 +31,8 @@ func (q *quiz) startQuiz() {
 
 	timer := time.NewTimer(time.Duration(q.timeout) * time.Second)
 
-	for _, ques := range q.questions {
-		fmt.Printf("%s = ", ques.question)
+	for ind, ques := range q.questions {
+		fmt.Printf("Problem #%d: %s = ", ind+1, ques.question)
 		ansCh := make(chan string)
 
 		go func() {
@@ -82,5 +82,5 @@ func main() {
 
 	q.readFileAndPrepareQuiz(*filename)
 	q.startQuiz()
-	fmt.Printf("You scored %d/%d", q.result, len(q.questions))
+	fmt.Printf("\nYou scored %d/%d", q.result, len(q.questions))
 }
