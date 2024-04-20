@@ -11,7 +11,7 @@ This application conducts a timed quiz using questions from a CSV file, displayi
 ## Installation
 
 ```bash
-git clone [https://github.com/yourusername/quiz-app.git](https://github.com/iamber12/quiz-game)
+git clone https://github.com/iamber12/quiz-game
 cd quiz-app
 go build
 ```
